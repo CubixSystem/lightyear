@@ -43,8 +43,8 @@ impl Plugin for TimePlugin {
         app.insert_resource(TimeManager::new(self.send_interval));
         // SYSTEMS
         app.add_systems(
-            RunFixedUpdateLoop,
-            update_overstep.after(bevy::time::run_fixed_update_schedule),
+            RunFixedMainLoop,
+            update_overstep.after(bevy::time::run_fixed_main_schedule),
         );
     }
 }

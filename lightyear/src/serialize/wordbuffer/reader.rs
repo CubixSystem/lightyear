@@ -1,3 +1,5 @@
+#![allow(invalid_reference_casting)]
+
 use std::cell::UnsafeCell;
 use std::num::NonZeroUsize;
 use std::ops::Deref;

@@ -15,7 +15,7 @@ pub struct SharedConfig {
     /// configuration for the [`FixedUpdate`](bevy::prelude::FixedUpdate) schedule
     pub tick: TickConfig,
     /// logging configuration
-    pub log: LogConfig,
+    // pub log: LogConfig,
 }
 
 impl Default for SharedConfig {
@@ -26,7 +26,7 @@ impl Default for SharedConfig {
             client_send_interval: Duration::from_millis(0),
             server_send_interval: Duration::from_millis(0),
             tick: TickConfig::new(Duration::from_millis(16)),
-            log: LogConfig::default(),
+            // log: LogConfig::default(),
         }
     }
 }
